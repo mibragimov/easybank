@@ -1,0 +1,42 @@
+$theme-colors: (
+  'primary': hsl(233, 26%, 24%),
+  'secondary': hsl(136, 65%, 51%),
+  'cyan': hsl(192, 70%, 51%),
+  'color-gray-blue': hsl(233, 8%, 62%),
+  'color-gray-blue-light': hsl(220, 16%, 96%),
+  'color-light-gray': hsl(0, 0%, 98%),
+  'white': hsl(0, 0%, 100%),
+);
+
+$font-family-base: 'Public Sans', sans-serif;
+$display3-size: 3.5rem;
+$display4-size: 2.5rem;
+
+@import '../../node_modules/bootstrap/scss/bootstrap';
+
+.navbar-light .navbar-toggler {
+  color: rgba(0, 0, 0, 0.5);
+  border: none;
+  cursor: default;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url(../images/icon-hamburger.svg);
+  background-size: auto;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.navbar-toggler-checkbox {
+  display: none;
+}
+
+.navbar-toggler-checkbox:checked + label .navbar-toggler-icon {
+  background-image: url(../images//icon-close.svg);
+  background-size: auto;
+  transition: all 0.2s;
+}
